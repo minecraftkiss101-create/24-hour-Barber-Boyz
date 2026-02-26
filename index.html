@@ -8,6 +8,13 @@
     name="description"
     content="24 Hour Barber Boyz in Atlanta offers professional haircuts, fades, beard trims and walk-in service. Open 24 hours. Book online today."
   >
+  <meta name="theme-color" content="#0b0d10">
+  <meta property="og:title" content="24 Hour Barber Boyz | 24/7 Barber Shop in Atlanta">
+  <meta property="og:description" content="Professional haircuts, fades, beard trims and walk-in service in Atlanta. Open 24/7.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://24hourbarberboyz.com">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
@@ -31,6 +38,7 @@
         <li><a href="#advantage">24-Hour Advantage</a></li>
         <li><a href="#booking">Booking</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#location">Location</a></li>
       </ul>
     </nav>
@@ -57,8 +65,8 @@
         <p>Google Reviews</p>
       </article>
       <article>
-        <p class="counter" data-target="37">0</p>
-        <p>Rating x10</p>
+        <p class="counter" data-target="37" data-decimals="1" data-divisor="10">0</p>
+        <p>Google Rating</p>
       </article>
       <article>
         <p class="counter" data-target="24">0</p>
@@ -132,6 +140,7 @@
     <section id="advantage" class="section advantage">
       <h2>Need a Cut at 2AM? We’re Open.</h2>
       <p>When your schedule is unpredictable, your barber shop shouldn’t be. We stay ready around the clock.</p>
+      <p class="live-status" aria-live="polite">Status: Open now</p>
       <div class="timeline" aria-label="24 hour timeline">
         <span>12AM</span>
         <span>6AM</span>
@@ -159,11 +168,27 @@
     <section id="gallery" class="section gallery">
       <h2>Gallery</h2>
       <div class="gallery-grid">
-        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Close-up skin fade haircut"><figcaption>Fades</figcaption></figure>
-        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Barber shaping beard"><figcaption>Beard Work</figcaption></figure>
-        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Barber shop interior chairs and mirrors"><figcaption>Shop Interior</figcaption></figure>
-        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Before and after haircut result"><figcaption>Before &amp; After</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Close-up skin fade haircut" loading="lazy" decoding="async"><figcaption>Fades</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Barber shaping beard" loading="lazy" decoding="async"><figcaption>Beard Work</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Barber shop interior chairs and mirrors" loading="lazy" decoding="async"><figcaption>Shop Interior</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Before and after haircut result" loading="lazy" decoding="async"><figcaption>Before &amp; After</figcaption></figure>
       </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Do you take walk-ins?</summary>
+        <p>Yes. Walk-ins are welcome 24/7, and we keep the chairs moving quickly.</p>
+      </details>
+      <details>
+        <summary>Can I book online?</summary>
+        <p>Yes. Use the Book Online button to reserve a specific service and time.</p>
+      </details>
+      <details>
+        <summary>Where are you located?</summary>
+        <p>1659 Defoor Ave NW, Atlanta, GA 30318.</p>
+      </details>
     </section>
 
     <section id="location" class="section location">
@@ -205,6 +230,25 @@
 
   <a href="#booking" class="floating-book">Book Now</a>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Barbershop",
+      "name": "24 Hour Barber Boyz",
+      "telephone": "+1-678-650-7372",
+      "image": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1200&q=80",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1659 Defoor Ave NW",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30318",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "url": "https://24hourbarberboyz.com"
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
