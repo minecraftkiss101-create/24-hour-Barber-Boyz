@@ -3,35 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>24 Hour Barber Boyz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to 24 Hour Barber Boyz</h1>
+        <div class="hero">
+            <h1>Welcome to 24 Hour Barber Boyz</h1>
+            <p>Your one-stop shop for all your grooming needs!</p>
+            <a href="#booking" class="btn">Book an Appointment</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <img src="placeholder1.jpg" alt="Barbering Service" />
-            <img src="placeholder2.jpg" alt="Haircut" />
-            <img src="placeholder3.jpg" alt="Shaving" />
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: contact@24hourbarberboyz.com</p>
-            <p>Address: 123 Barber St, Hair City, HA 12345</p>
-        </section>
-        <section>
-            <h2>Follow Us</h2>
-            <a href="https://www.facebook.com/24hourbarberboyz">Facebook</a>
-            <a href="https://www.instagram.com/24hourbarberboyz">Instagram</a>
-            <a href="https://twitter.com/24hourbarberboyz">Twitter</a>
-        </section>
-    </main>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Haircut - $20</li>
+            <li>Shave - $15</li>
+            <li>Beard Trim - $10</li>
+            <li>Coloring - $30</li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="https://source.unsplash.com/random/300x200?barber" alt="Barber image 1">
+        <img src="https://source.unsplash.com/random/300x200?haircut" alt="Barber image 2">
+        <img src="https://source.unsplash.com/random/300x200?beard" alt="Barber image 3">
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            "Best barber experience I've ever had! Highly recommend!" - John Doe
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 1659 Defoor Ave NW Atlanta GA 30318</p>
+        <p>Phone: <a href="tel:+16786507372">(678) 650-7372</a></p>
+        <p>Email: <a href="mailto:info@24hourbarberboyz.com">info@24hourbarberboyz.com</a></p>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Appointment</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2026 24 Hour Barber Boyz. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2026 24 Hour Barber Boyz</p>
     </footer>
+    <button class="floating-button">Book Now</button>
 </body>
 </html>
