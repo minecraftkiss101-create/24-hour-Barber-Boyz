@@ -1,69 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24 Hour Barber Boyz</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24 Hour Barber Boyz | 24/7 Barber Shop in Atlanta</title>
+  <meta
+    name="description"
+    content="24 Hour Barber Boyz in Atlanta offers professional haircuts, fades, beard trims and walk-in service. Open 24 hours. Book online today."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>Welcome to 24 Hour Barber Boyz</h1>
-            <p>Your one-stop shop for all your grooming needs!</p>
-            <a href="#booking" class="btn">Book an Appointment</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#top">24 Hour Barber Boyz</a>
+      <button class="hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="music-toggle" aria-pressed="false" aria-label="Toggle background music">
+        ♪ BGM Off
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#advantage">24-Hour Advantage</a></li>
+        <li><a href="#booking">Booking</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" id="main">
+      <div class="hero-overlay"></div>
+      <div class="barber-pole" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Open 24 Hours • Atlanta, GA</p>
+        <h1>Fresh Cuts. Anytime. 24/7.</h1>
+        <p class="subheadline">Atlanta’s Go-To Barbershop — Open Around the Clock.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#booking">Book Now</a>
+          <a class="btn btn-secondary" href="tel:+16786507372">Call Now</a>
         </div>
-    </header>
+        <p class="music-note">Tap the music toggle for a late-night jazz vibe in the shop.</p>
+      </div>
+    </section>
+  </header>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Haircut - $20</li>
-            <li>Shave - $15</li>
-            <li>Beard Trim - $10</li>
-            <li>Coloring - $30</li>
-        </ul>
+  <audio id="bgm" loop preload="none">
+    <source src="https://archive.org/download/jazzmusic_202210/Jazz%20Music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+    <section class="stats" aria-label="Shop statistics">
+      <article>
+        <p class="counter" data-target="149">0</p>
+        <p>Google Reviews</p>
+      </article>
+      <article>
+        <p class="counter" data-target="37">0</p>
+        <p>Rating x10</p>
+      </article>
+      <article>
+        <p class="counter" data-target="24">0</p>
+        <p>Hours Open Daily</p>
+      </article>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <img src="https://source.unsplash.com/random/300x200?barber" alt="Barber image 1">
-        <img src="https://source.unsplash.com/random/300x200?haircut" alt="Barber image 2">
-        <img src="https://source.unsplash.com/random/300x200?beard" alt="Barber image 3">
+    <section id="about" class="section about">
+      <h2>Built for the Atlanta Grind</h2>
+      <p>
+        At 24 Hour Barber Boyz, walk-ins are always welcome. Our professional barbers keep the chairs moving,
+        the fades sharp, and the atmosphere clean and focused. The music stays business-appropriate, the service
+        stays consistent, and the people are genuine. This is a shop made for serious grooming at any hour.
+      </p>
     </section>
 
-    <section id="testimonials">
-        <h2>What Our Clients Say</h2>
-        <blockquote>
-            "Best barber experience I've ever had! Highly recommend!" - John Doe
-        </blockquote>
+    <section id="services" class="section services">
+      <h2>Services</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Haircuts</h3>
+          <p class="price">From $35</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+        <article class="service-card">
+          <h3>Skin Fade</h3>
+          <p class="price">From $40</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+        <article class="service-card">
+          <h3>Beard Trim</h3>
+          <p class="price">From $25</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+        <article class="service-card">
+          <h3>Hot Towel Shave</h3>
+          <p class="price">From $30</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+        <article class="service-card">
+          <h3>Line Up</h3>
+          <p class="price">From $20</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+        <article class="service-card">
+          <h3>Kids Cuts</h3>
+          <p class="price">From $28</p>
+          <a href="#booking" class="card-btn">Book This Service</a>
+        </article>
+      </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Address: 1659 Defoor Ave NW Atlanta GA 30318</p>
-        <p>Phone: <a href="tel:+16786507372">(678) 650-7372</a></p>
-        <p>Email: <a href="mailto:info@24hourbarberboyz.com">info@24hourbarberboyz.com</a></p>
-    </section>
-
-    <section id="booking">
-        <h2>Book Your Appointment</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Phone" required>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <footer>
-        <div class="social-media">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+    <section id="why-us" class="section why-us">
+      <h2>Why Choose 24 Hour Barber Boyz</h2>
+      <div class="rating-row">
+        <p class="rating-number">3.7</p>
+        <div class="stars" aria-label="3.7 out of 5 stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span class="dim">★</span>
         </div>
-        <p>&copy; 2026 24 Hour Barber Boyz</p>
-    </footer>
-    <button class="floating-button">Book Now</button>
+        <p>149 Reviews</p>
+      </div>
+      <div class="trust-grid">
+        <blockquote>“Great walk-in service.”</blockquote>
+        <blockquote>“Genuine good people.”</blockquote>
+        <blockquote>“Barbers are here to work.”</blockquote>
+        <blockquote>“Music is business-appropriate.”</blockquote>
+      </div>
+      <p class="open-badge">Open 24 Hours</p>
+    </section>
+
+    <section id="advantage" class="section advantage">
+      <h2>Need a Cut at 2AM? We’re Open.</h2>
+      <p>When your schedule is unpredictable, your barber shop shouldn’t be. We stay ready around the clock.</p>
+      <div class="timeline" aria-label="24 hour timeline">
+        <span>12AM</span>
+        <span>6AM</span>
+        <span>12PM</span>
+        <span>6PM</span>
+        <span>11:59PM</span>
+      </div>
+      <div class="timeline-bar"><span></span></div>
+    </section>
+
+    <section id="booking" class="section booking">
+      <h2>Book Your Chair</h2>
+      <div class="booking-panel">
+        <div>
+          <p>Booksy Integration Ready</p>
+          <p>Pick your service, choose your barber, and secure your slot online in minutes.</p>
+        </div>
+        <div class="booking-actions">
+          <a class="btn btn-primary" href="https://booksy.com" target="_blank" rel="noopener noreferrer">Book Online</a>
+          <a class="btn btn-secondary" href="tel:+16786507372">Call +1 678-650-7372</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Close-up skin fade haircut"><figcaption>Fades</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Barber shaping beard"><figcaption>Beard Work</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Barber shop interior chairs and mirrors"><figcaption>Shop Interior</figcaption></figure>
+        <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Before and after haircut result"><figcaption>Before &amp; After</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="location" class="section location">
+      <h2>Find Us in Atlanta</h2>
+      <p>1659 Defoor Ave NW, Atlanta, GA 30318, United States</p>
+      <div class="location-actions">
+        <a class="btn btn-primary" href="https://maps.google.com/?q=1659+Defoor+Ave+NW,+Atlanta,+GA+30318" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <p class="open-badge">Open 24 Hours</p>
+      </div>
+      <iframe
+        title="Map to 24 Hour Barber Boyz"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=1659%20Defoor%20Ave%20NW,%20Atlanta,%20GA%2030318&t=&z=14&ie=UTF8&iwloc=&output=embed"
+      ></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <h3>24 Hour Barber Boyz</h3>
+      <p>Walk-ins Welcome</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Book</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+    <div>
+      <p><a href="tel:+16786507372">+1 678-650-7372</a></p>
+      <p>1659 Defoor Ave NW, Atlanta, GA 30318</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#booking" class="floating-book">Book Now</a>
+
+  <script src="script.js"></script>
 </body>
 </html>
