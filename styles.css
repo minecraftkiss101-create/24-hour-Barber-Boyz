@@ -1,101 +1,41 @@
-/* General Styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+.barber-shop {
+    background-color: #f8f9fa;
+    color: #343a40;
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    line-height: 1.6;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+.barber-shop h1, .barber-shop h2, .barber-shop h3 {
+    font-weight: bold;
+    color: #dc3545; /* Red color for professionalism */
+    margin-bottom: 15px;
 }
 
-/* Header Styles */
-header {
-    background: #2d2d2d;
-    padding: 20px 0;
-    text-align: center;
-    transition: background 0.3s;
-}
-
-header h1 {
-    color: #8B0000;
-    font-size: 2.5em;
-}
-
-/* Navigation Styles */
-navigation {
-    margin: 20px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #0066ff;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #8B0000;
-}
-
-/* Section Styles */
-section {
-    padding: 20px;
-    margin: 20px 0;
-    background: #2d2d2d;
+.barber-shop button {
+    background-color: #dc3545; /* Red for action buttons */
+    color: white;
+    border: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-section:hover {
-    background: #4d4d4d;
+.barber-shop button:hover {
+    background-color: #c82333;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #2d2d2d;
+.barber-shop .service {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in;
+.barber-shop .service:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
