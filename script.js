@@ -3,10 +3,18 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 const navAnchors = document.querySelectorAll('.nav-links a');
 const floatingBook = document.querySelector('.floating-book');
+const liveStatus = document.querySelector('.live-status');
 
 hamburger.addEventListener('click', () => {
   const isOpen = navLinks.classList.toggle('open');
   hamburger.setAttribute('aria-expanded', String(isOpen));
+});
+
+window.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  }
 });
 
 navAnchors.forEach((anchor) => {
@@ -43,6 +51,13 @@ window.addEventListener('scroll', handleScrollUI);
 handleScrollUI();
 
 const counters = document.querySelectorAll('.counter');
+const formatCounterValue = (counter, value) => {
+  const decimals = Number(counter.dataset.decimals || 0);
+  const divisor = Number(counter.dataset.divisor || 1);
+  const adjusted = value / divisor;
+  return adjusted.toFixed(decimals);
+};
+
 const countObserver = new IntersectionObserver((entries, observer) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
@@ -55,10 +70,10 @@ const countObserver = new IntersectionObserver((entries, observer) => {
     const timer = setInterval(() => {
       current += step;
       if (current >= target) {
-        counter.textContent = String(target);
+        counter.textContent = formatCounterValue(counter, target);
         clearInterval(timer);
       } else {
-        counter.textContent = String(current);
+        counter.textContent = formatCounterValue(counter, current);
       }
     }, 20);
 
@@ -81,3 +96,13 @@ const revealObserver = new IntersectionObserver((entries, observer) => {
 }, { threshold: 0.2 });
 
 revealElements.forEach((element) => revealObserver.observe(element));
+
+if (liveStatus) {
+  const now = new Date();
+  const timeText = now.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+  liveStatus.textContent = `Status: Open now • Local time ${timeText}`;
+}
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('reduce-motion');
+}

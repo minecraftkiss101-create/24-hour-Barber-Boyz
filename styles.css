@@ -430,3 +430,83 @@ blockquote {
   .booking-panel { grid-template-columns: 1fr; }
   .barber-pole { display: none; }
 }
+
+
+.live-status {
+  margin: 0.8rem 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--chrome);
+  font-weight: 700;
+}
+
+.live-status::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55);
+  animation: pulseDot 1.8s ease-out infinite;
+}
+
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.55); }
+  100% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+}
+
+.faq details {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #121418;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+}
+
+.faq details + details {
+  margin-top: 0.75rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: '+';
+  float: right;
+  color: var(--accent);
+}
+
+.faq details[open] summary::after {
+  content: '−';
+}
+
+.faq p {
+  color: var(--muted);
+  margin: 0.7rem 0 0;
+}
+
+.btn:focus-visible,
+.card-btn:focus-visible,
+.nav-links a:focus-visible,
+.hamburger:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
